@@ -15,7 +15,10 @@ public class Participante {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nome")
     private String nome;
+    @Column(name = "cargo")
     private String cargo;
 
 }

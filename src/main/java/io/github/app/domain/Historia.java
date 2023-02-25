@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name = "story", schema = "planning_poker")
-public class Story {
+@Table(name = "historia", schema = "planning_poker")
+public class Historia {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,6 +20,4 @@ public class Story {
     private String titulo;
     @Column(name = "descricao")
     private String descricao;
-    @Column(name = "sala_id")
-    private Long salaId;
 }
